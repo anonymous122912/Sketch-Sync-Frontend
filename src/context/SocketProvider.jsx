@@ -9,7 +9,7 @@ export const useSocket = () => {
 };
 
 export const SocketProvider = (props) => {
-  const socket = useMemo(() => io("localhost:3001"), []);
+  const socket = useMemo(() => io("https://sketch-sync-backend-production.up.railway.app/"), []);
 
   return (
     <SocketContext.Provider value={socket}>
